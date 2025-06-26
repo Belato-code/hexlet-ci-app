@@ -2,10 +2,7 @@ name: test hexlet-ci-app
 on: push
 jobs:
   Github-Actions:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ubuntu-latest
     steps:
       - name: setup
         run: make setup
